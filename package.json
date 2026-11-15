@@ -1,0 +1,44 @@
+{
+  "name": "vouch",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build --webpack",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "next": "^16.2.10",
+    "react": "latest",
+    "react-dom": "latest",
+    "tailwindcss": "latest",
+    "@tailwindcss/postcss": "latest",
+    "lucide-react": "latest",
+    "motion": "latest",
+    "react-hook-form": "latest",
+    "zod": "latest",
+    "zustand": "latest",
+    "dexie": "latest",
+    "dexie-react-hooks": "latest",
+    "@react-pdf/renderer": "latest",
+    "date-fns": "latest",
+    "decimal.js": "latest",
+    "@radix-ui/react-dialog": "latest",
+    "@radix-ui/react-slot": "latest",
+    "class-variance-authority": "latest",
+    "clsx": "latest",
+    "tailwind-merge": "latest"
+  },
+  "devDependencies": {
+    "typescript": "~5.9.3",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@types/node": "latest",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.2.10"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  }
+}
