@@ -2369,6 +2369,10 @@ main {
   font-size: 9.72px;
   color: #9a9eaa;
 }
+.contact-details {
+  font-style: normal;
+  overflow-wrap: anywhere;
+}
 .legal {
   max-width: 770px;
   padding: 65px 30px 100px;
