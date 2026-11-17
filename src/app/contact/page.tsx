@@ -9,9 +9,9 @@ export default function Page() {
     <div className="marketing">
       <PublicNav />
       <article className="legal">
-        <h1>A little help with Vouch.</h1>
+        <h1>A little help with vouchs.</h1>
         <p>
-          Vouch works entirely on your device. There is no account or remote
+          vouchs works entirely on your device. There is no account or remote
           document recovery service.
         </p>
         <h2>Protect your work</h2>
@@ -32,7 +32,7 @@ export default function Page() {
         <h2>Report a problem</h2>
         <p>
           No support mailbox has been configured for this installation. Contact
-          the operator of the website where you opened Vouch. Include your
+          the operator of the website where you opened vouchs. Include your
           browser version and a description of the issue; avoid sending private
           invoices or bank details.
         </p>

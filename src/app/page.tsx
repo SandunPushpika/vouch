@@ -24,7 +24,7 @@ import { DocumentPreview } from "@/components/documents/preview";
 import { sampleDocument } from "@/lib/sample-document";
 import { templates } from "@/constants/brand";
 export const metadata = {
-  title: "Vouch — Free Invoice & Quotation Generator",
+  title: "vouchs — Free Invoice & Quotation Generator",
   alternates: { canonical: "/" },
 };
 const features = [
@@ -62,7 +62,7 @@ const features = [
     Icon: ShieldCheck,
     title: "Your business stays yours",
     description:
-      "Your data never leaves your device. No servers. No tracking. No surprises.",
+      "Your documents stay on your device. No accounts. No document uploads.",
   },
 ];
 export default function Home() {
@@ -75,7 +75,7 @@ export default function Home() {
         itemScope
         itemType="https://schema.org/SoftwareApplication"
       >
-        <meta itemProp="name" content="Vouch" />
+        <meta itemProp="name" content="vouchs" />
         <meta itemProp="applicationCategory" content="BusinessApplication" />
         <meta itemProp="operatingSystem" content="Web browser" />
         <div className="hero-label">
@@ -326,7 +326,7 @@ export default function Home() {
           <h2>Private isn’t a feature. It’s the foundation.</h2>
           <p>
             Your business details, clients, and documents stay right on your
-            device. Vouch processes everything in your browser, with no accounts
+            device. vouchs processes everything in your browser, with no accounts
             and no data uploads. Export a backup whenever you like — you’re
             always in control.
           </p>
@@ -339,7 +339,7 @@ export default function Home() {
         </div>
         {[
           [
-            "Is Vouch really free?",
+            "Is vouchs really free?",
             "Yes. Every current feature is free, including templates, PDF downloads, client management, and backups. Optional Pro tools are planned for the future.",
           ],
           [

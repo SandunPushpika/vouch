@@ -1,15 +1,16 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import { brand } from "@/constants/brand";
 import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL(brand.url),
   title: {
-    default: "Vouch — Good work. Beautifully billed.",
-    template: "%s | Vouch",
+    default: "vouchs — Good work. Beautifully billed.",
+    template: "%s | vouchs",
   },
   description: brand.description,
   openGraph: {
-    title: "Vouch — Free Invoice & Quotation Generator",
+    title: "vouchs — Free Invoice & Quotation Generator",
     description: brand.description,
     type: "website",
   },
@@ -22,7 +23,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }

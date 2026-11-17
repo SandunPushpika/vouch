@@ -1,4 +1,4 @@
-# Vouch
+# vouchs
 
 A privacy-first invoice and quotation workspace built with Next.js App Router and strict TypeScript. Business data stays in IndexedDB on the user's device. No account, API routes, server actions, remote database, payment provider, or document upload service is used.
 
@@ -103,7 +103,7 @@ The amount is stored as an optional decimal string on the document and included 
 
 IndexedDB database: `vouch-local`. Theme preference is the only localStorage entry (`vouch-theme`). Logos are validated PNG/JPEG/WebP images, limited to 5 MB, resized to at most 600 pixels on their longest edge, and stored as local data URLs in IndexedDB. Imported logos may not reference remote URLs or SVG. No document information is put in URLs; the editor's query parameter contains only the document ID.
 
-Local data is not encrypted by Vouch. Browser data can be removed by site-data clearing, private browsing, browser eviction, device loss, or a domain change. Vouch has no remote copy or automatic recovery. The first visit needs internet to load the application; this version does not include a service worker or guarantee an offline cold start.
+Local data is not encrypted by vouchs. Browser data can be removed by site-data clearing, private browsing, browser eviction, device loss, or a domain change. vouchs has no remote copy or automatic recovery. The first visit needs internet to load the application; this version does not include a service worker or guarantee an offline cold start.
 
 Draft saving is debounced by 650 ms. Writes are serialized and the success indicator appears only after persistence succeeds. Internal link navigation flushes valid work; invalid unsaved work requires confirmation to leave. Tab closing warns if current work differs from the saved snapshot. Concurrent writes use an expected timestamp inside the save transaction. If another tab changed or deleted the document, a stale save is rejected with a request to reopen the current version; edits are not automatically merged.
 
@@ -134,3 +134,5 @@ After a clean `npm install`, pass TypeScript, lint, and the static build, then m
 The PDF font is locally hosted Geist with Latin coverage; Sinhala, Tamil, Arabic, and other scripts need a suitable locally bundled font and shaping verification before promising multilingual PDF support. Currency support includes LKR; PDF money uses ISO currency codes. PDF templates, repeated headers, logo embedding, footer bounds, and pagination have passed renderer layout checks; visual and browser print QA remain part of the release checklist. Exact PDF preview support varies on mobile. Browser print may require opening the downloaded PDF manually when popups are blocked. There is no account, cloud sync, automatic email, payment verification, exchange-rate conversion, or subscription billing.
 
 Branding is centralized in `src/constants/brand.ts`; update the public wordmark, metadata, and favicon when rebranding. Review public policy text, configure operator contact and production origin, and complete the release checklist before launch.
+
+Vercel Web Analytics is mounted in the root layout for all pages. Enable Web Analytics in the Vercel project dashboard and deploy to start collecting visits. Set `NEXT_PUBLIC_SITE_URL` to the full production URL for canonical links and metadata.

@@ -9,34 +9,35 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@radix-ui/react-dialog": "latest",
+    "@radix-ui/react-slot": "latest",
+    "@react-pdf/renderer": "latest",
+    "@tailwindcss/postcss": "latest",
+    "@vercel/analytics": "^2.0.1",
+    "class-variance-authority": "latest",
+    "clsx": "latest",
+    "date-fns": "latest",
+    "decimal.js": "latest",
+    "dexie": "latest",
+    "dexie-react-hooks": "latest",
+    "lucide-react": "latest",
+    "motion": "latest",
     "next": "^16.2.10",
     "react": "latest",
     "react-dom": "latest",
-    "tailwindcss": "latest",
-    "@tailwindcss/postcss": "latest",
-    "lucide-react": "latest",
-    "motion": "latest",
     "react-hook-form": "latest",
+    "tailwind-merge": "latest",
+    "tailwindcss": "latest",
     "zod": "latest",
-    "zustand": "latest",
-    "dexie": "latest",
-    "dexie-react-hooks": "latest",
-    "@react-pdf/renderer": "latest",
-    "date-fns": "latest",
-    "decimal.js": "latest",
-    "@radix-ui/react-dialog": "latest",
-    "@radix-ui/react-slot": "latest",
-    "class-variance-authority": "latest",
-    "clsx": "latest",
-    "tailwind-merge": "latest"
+    "zustand": "latest"
   },
   "devDependencies": {
-    "typescript": "~5.9.3",
+    "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
-    "@types/node": "latest",
     "eslint": "^9.39.5",
-    "eslint-config-next": "^16.2.10"
+    "eslint-config-next": "^16.2.10",
+    "typescript": "~5.9.3"
   },
   "engines": {
     "node": ">=22.13.0"

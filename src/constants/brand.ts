@@ -1,9 +1,9 @@
 export const brand = {
-  name: "Vouch",
+  name: "vouchs",
   tagline: "Good work. Beautifully billed.",
   description:
-    "Free, private invoices and quotations. Create professional PDFs with Vouch, entirely on your device.",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://vouch.example",
+    "Free, private invoices and quotations. Create professional PDFs with vouchs, entirely on your device.",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://vouchs.example",
 };
 export const currencies = [
   "LKR",

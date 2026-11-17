@@ -10,23 +10,23 @@ export default function Page() {
       <article className="legal">
         <h1>A few clear terms.</h1>
         <p>Last updated: 15 November 2026</p>
-        <h2>Using Vouch</h2>
+        <h2>Using vouchs</h2>
         <p>
-          Vouch is a free, browser-based tool for preparing invoices and
+          vouchs is a free, browser-based tool for preparing invoices and
           quotations. You are responsible for reviewing your document details,
           tax rates, payment terms, and totals before using or sending them.
         </p>
         <h2>Your business requirements</h2>
         <p>
           Requirements for invoices and taxes vary by location and business.
-          Vouch does not provide accounting, tax, or legal advice, and does not
+          vouchs does not provide accounting, tax, or legal advice, and does not
           verify payments, client acceptance, or regulatory compliance. Statuses
           are managed manually.
         </p>
         <h2>Your data and backups</h2>
         <p>
           You retain ownership of your content. All working data is stored in
-          your browser. Keep regular backups; Vouch cannot recover data removed
+          your browser. Keep regular backups; vouchs cannot recover data removed
           from your device or browser.
         </p>
         <h2>Availability</h2>

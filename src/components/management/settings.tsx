@@ -455,7 +455,7 @@ export default function SettingsPage() {
                     new Blob([JSON.stringify(await exportBackup(), null, 2)], {
                       type: "application/json",
                     }),
-                    `Vouch-backup-${new Date().toISOString().slice(0, 10)}.json`
+                    `vouchs-backup-${new Date().toISOString().slice(0, 10)}.json`
                   );
                   toast("Backup downloaded. Keep it somewhere safe.");
                 } catch {
@@ -503,7 +503,7 @@ export default function SettingsPage() {
                   toast("Backup restored successfully.");
                 } catch {
                   toast(
-                    "Import failed. Use a valid Vouch schema version 1 backup. No data was changed."
+                    "Import failed. Use a valid vouchs schema version 1 backup. No data was changed."
                   );
                 }
               }}
@@ -522,7 +522,7 @@ export default function SettingsPage() {
               onClick={async () => {
                 if (
                   !confirm(
-                    "Clear ALL Vouch documents, clients, items and settings on this device? Export a backup before continuing."
+                    "Clear ALL vouchs documents, clients, items and settings on this device? Export a backup before continuing."
                   )
                 )
                   return;
